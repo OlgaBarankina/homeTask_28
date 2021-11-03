@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondaryVariant"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="337dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/LightOrange"
+            app:cardCornerRadius="25dp">
+
+            <TextView
+                android:id="@+id/tvBankCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Bank Card"
+                android:textAlignment="center"
+                android:textColor="#3C633D"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="48dp"
+                android:text="FirstName:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="48dp"
+                android:text="Bill" />
+
+            <TextView
+                android:id="@+id/tvSecondName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="72dp"
+                android:text="LastName:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="72dp"
+                android:text="Jonson" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="95dp"
+                android:text="Age:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAgeRez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="95dp"
+                android:text="32" />
+
+            <TextView
+                android:id="@+id/tvid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="115dp"
+                android:text="Client ID:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvClientID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="115dp"
+                android:text="7415896" />
+
+            <TextView
+                android:id="@+id/tvPin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="155dp"
+                android:text="PIN Code:"
+                android:textColor="#4F8851"
+                android:textColorLink="#0E0E0E"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/etPin"
+                android:layout_width="98dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="140dp"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="numberPassword"
+                android:textColorHighlight="#4F8851"
+                android:textColorLink="#4F8851" />
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
